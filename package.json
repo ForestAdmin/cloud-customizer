@@ -1,0 +1,23 @@
+{
+  "name": "custom-agent",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "engines": {
+    "node": "18.x.x",
+    "npm": ">= 9"
+  },
+  "entryPoints": [
+    "dist/index.js"
+  ],
+  "scripts": {
+    "dev:get-typings": "node node_modules/cloud-customizer/dist/index.js",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@forestadmin/agent": "^1.36.12",
+    "cloud-customizer": "1.0.0",
+    "dotenv": "^16.3.1",
+    "typescript": "^5.3.2"
+  }
+}
