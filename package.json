@@ -1,20 +1,20 @@
 {
-  "name": "custom-agent",
+  "name": "cloud-customizer",
   "version": "1.0.0",
   "main": "dist/index.js",
   "engines": {
-    "node": "18.x.x",
-    "npm": ">= 9"
+    "node": "18.x.x"
   },
   "entryPoints": [
     "dist/index.js"
   ],
   "scripts": {
-    "update-typings": "node node_modules/cloud-toolkit/commands/update-typings.js",
+    "update-typings": "cloud-toolkit update-typings",
     "build": "tsc"
   },
   "devDependencies": {
-    "@forestadmin/cloud-toolkit": "latest",
+    "@forestadmin/cloud-toolkit": "1.0.0-beta-cloud-customizer.4",
+    "@types/node": "^20.10.6",
     "dotenv": "^16.3.1",
     "typescript": "^5.3.2"
   }
