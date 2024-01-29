@@ -10,12 +10,14 @@
   ],
   "scripts": {
     "update-typings": "cloud-toolkit update-typings",
-    "build": "tsc"
+    "build": "node esbuild.mjs",
+    "build:watch": "nodemon --watch './src' -e ts,js esbuild.mjs"
   },
   "devDependencies": {
     "@forestadmin/cloud-toolkit": "1.0.0-beta-cloud-customizer.4",
     "@types/node": "^20.10.6",
     "dotenv": "^16.3.1",
-    "typescript": "^5.3.2"
+    "typescript": "^5.3.2",
+    "esbuild": "^0.20.0"
   }
 }
