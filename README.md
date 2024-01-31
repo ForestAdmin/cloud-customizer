@@ -34,8 +34,14 @@ TODO
 
 `yarn update-typings` or `npm run update-typings`
 
-This command will then update typings according to the structure of your database and your current code customizations.
+This command will update typings according to the structure of your database and your current code customizations.
 The typings are here to provide autocompletion in your IDE to help you write faster and less error prone code.
 
 You should execute this command on a regular basis, to keep your IDE
 updated with your database structure and customizations.
+
+# Refresh authentication token
+
+`yarn signin`
+
+This command triggers an authentication workflow and refresh the authentication token.
