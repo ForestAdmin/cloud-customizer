@@ -16,7 +16,7 @@ export default function customizeAgent(agent: Agent<Schema>) {
   
   agent.customizeCollection("user", (userCollection) => {
     userCollection.addAction("Anonymize", {
-      scope: "Bulk", // This action can be triggered product on one or more products
+      scope: "Bulk", // This action can be triggered on one or more items (users here)
       execute: async (context, resultBuilder) => {
         const selectedUsers = await context.getRecords([]);
 
