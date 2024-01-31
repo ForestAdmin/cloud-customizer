@@ -1,15 +1,22 @@
 
-/* export default function customizeAgent(agent: Agent<Schema>) {
-  // Add customizations here. the Schema type contains your database schema so that your IDE will autocomplete as you type
+/* 
+import type { Agent } from '@forestadmin/cloud-toolkit/dist/types';
+
+import { Schema } from '../typings';
+
+export default function customizeAgent(agent: Agent<Schema>) {
+  // Add customizations here.
+  // The Schema type contains your database schema so that your IDE will autocomplete as you type.
   // As your project grows, you might need to split it into multiple files
-  // For instance, you can code custom actions, charts, create new fields or relationships, load plugins.
+  // For instance, you can code custom actions, charts,
+  //   create new fields or relationships, load plugins.
   // refer to the documentation for more details: https://docs.forestadmin.com/developer-guide-agents-nodejs/agent-customization/agent-customization
   //
   // Here is some code examples to get your started
-  /*
+  
   agent.customizeCollection("user", (userCollection) => {
     userCollection.addAction("Anonymize", {
-      scope: "Bulk", // This action can be triggered product on one or more products
+      scope: "Bulk", // This action can be triggered on one or more items (users here)
       execute: async (context, resultBuilder) => {
         const selectedUsers = await context.getRecords([]);
 
@@ -41,4 +48,5 @@
       return { field: "name", operator: "Contains", value: searchString };
     });
   });
-}*/
+}
+*/
