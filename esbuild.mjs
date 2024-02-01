@@ -7,4 +7,6 @@ await esbuild.build({
     minify: true,
     treeShaking: true,
     logLevel: 'debug',
+    target: 'node18',
+    platform: 'node'
 })
