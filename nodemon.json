@@ -1,5 +1,5 @@
 {
   "events": {
-    "restart": "cloud-toolkit forestadmin:update-typings"
+    "restart": "npm-run-all forestadmin:update-typings"
   }
 }
