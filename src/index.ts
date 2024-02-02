@@ -1,5 +1,7 @@
+import type {Agent} from '@forestadmin/cloud-toolkit'
+import { Schema } from '../typings';
 
-/* export default function customizeAgent(agent: Agent<Schema>) {
+export default function customizeAgent(agent: Agent<Schema>) {
   // Add customizations here. the Schema type contains your database schema so that your IDE will autocomplete as you type
   // As your project grows, you might need to split it into multiple files
   // For instance, you can code custom actions, charts, create new fields or relationships, load plugins.
@@ -41,4 +43,4 @@
       return { field: "name", operator: "Contains", value: searchString };
     });
   });
-}*/
+}
