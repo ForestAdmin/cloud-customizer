@@ -1,0 +1,5 @@
+{
+  "events": {
+    "restart": "cloud-toolkit forestadmin:update-typings"
+  }
+}
