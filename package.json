@@ -15,15 +15,16 @@
     "build:watch": "nodemon --watch './src' -e ts,js esbuild.mjs",
     "prepackage": "npm-run-all build",
     "package": "cloud-toolkit package",
-    "prepublish": "npm-run-all package",
-    "publish": "cloud-toolkit publish",
-    "build:package:publish": "npm-run-all build package publish"
+    "precloud-publish": "npm-run-all package",
+    "cloud-publish": "cloud-toolkit publish",
+    "build:package:publish": "npm-run-all build package cloud-publish"
   },
   "devDependencies": {
-    "@forestadmin/cloud-toolkit": "^1.0.0-beta-cloud-toolkit.1",
+    "@forestadmin/cloud-toolkit": "^1.0.0-beta-cloud-toolkit.5",
     "@types/node": "^20.10.6",
     "dotenv": "^16.3.1",
     "esbuild": "^0.20.0",
+    "nodemon": "^3.0.3",
     "npm-run-all2": "^6.1.2",
     "typescript": "^5.3.2"
   }
