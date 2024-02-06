@@ -19,7 +19,7 @@
     "forestadmin:build:package:publish": "npm-run-all build forestadmin:package forestadmin:publish"
   },
   "devDependencies": {
-    "@forestadmin/cloud-toolkit": "^1.0.0-beta-cloud-toolkit.7",
+    "@forestadmin/cloud-toolkit": "^1.0.0-beta-cloud-toolkit.13",
     "@types/node": "^20.10.6",
     "dotenv": "^16.3.1",
     "esbuild": "^0.20.0",
