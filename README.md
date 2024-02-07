@@ -57,7 +57,7 @@ But if you want to update typings manually, you can run:
 You can also use `yarn` or `npm` and run `forestadmin:update-typings` script.
 
 This command will update typings according to the structure of your database and your current code customizations.
-The typings are here to provide autocompletion in your IDE to help you write faster and less error in your code.
+The typings are here to provide autocompletion in your IDE to help you write faster and avoid errors in your code.
 
 You should execute this command on a regular basis, to keep your IDE
 updated with your database structure and customizations.
