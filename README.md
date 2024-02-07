@@ -26,7 +26,7 @@ then build the project
 
 `yarn build` or `npm run build`
 
-**You can found in your `package.json` some scripts to help you to develop your customizations.
+**You can found in your `package.json` some scripts to help you to develop customizations.
 You can replace them with your own scripts, by using directly the `forest-cloud` command.**
 
 # Write your customizations
