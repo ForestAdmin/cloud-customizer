@@ -39,9 +39,9 @@ To publish your customizations, you need to build, package and publish your cust
 The build command will compile your customizations, the package command will create a package and the publish command will publish your package to your project.
 
 ```bash
-forest-cloud build
-forest-cloud package
-forest-cloud publish
+npx forest-cloud build
+npx forest-cloud package
+npx forest-cloud publish
 ```
 
 You can also use `yarn` or `npm` and run `forestadmin:build:package:publish` script.
@@ -52,7 +52,7 @@ You can also use `yarn` or `npm` and run `forestadmin:build:package:publish` scr
 
 But if you want to update typings manually, you can run:
 
-`forest-cloud update-typings`
+`npx forest-cloud update-typings`
 
 You can also use `yarn` or `npm` and run `forestadmin:update-typings` script.
 
@@ -64,7 +64,7 @@ updated with your database structure and customizations.
 
 # Refresh authentication token
 
-`forest-cloud login`
+`npx forest-cloud login`
 
 You can also use `yarn` or `npm` and run `forestadmin:login` script.
 
