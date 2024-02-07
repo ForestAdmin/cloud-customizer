@@ -48,6 +48,10 @@ You can also use `yarn` or `npm` and run `forestadmin:build:package:publish` scr
 
 # Update typings
 
+**_`build` and `build:watch` scripts will update typings automatically._**
+
+But if you want to update typings manually, you can run:
+
 `forest-cloud update-typings`
 
 You can also use `yarn` or `npm` and run `forestadmin:update-typings` script.
