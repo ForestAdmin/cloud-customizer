@@ -31,7 +31,7 @@ You can replace them with your own scripts, by using directly the `forest-cloud`
 
 # Write your customizations
 
-**[Read the developer guide](https://docs.forestadmin.com/developer-guide-agents-nodejs/agent-customization/agent-customization)** to learn how to write your customizations.
+**[Read the developer guide](https://docs.forestadmin.com/developer-guide-agents-nodejs/agent-customization/agent-customization)** to learn how to write customizations.
 
 # Publish your customizations
 
