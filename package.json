@@ -1,4 +1,5 @@
 {
+  "license": "MIT",
   "name": "cloud-customizer",
   "version": "1.0.0",
   "main": "dist/index.js",
@@ -17,7 +18,7 @@
     "forestadmin:package": "forest-cloud package",
     "forestadmin:publish": "forest-cloud publish",
     "forestadmin:build:package:publish": "npm-run-all build forestadmin:package forestadmin:publish",
-    "foreastadmin:help": "forest-cloud --help"
+    "forestadmin:help": "forest-cloud --help"
   },
   "devDependencies": {
     "@forestadmin/cloud-toolkit": "^1.0.0-beta-cloud-toolkit.19",
