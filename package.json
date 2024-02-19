@@ -18,10 +18,11 @@
     "forestadmin:package": "forest-cloud package",
     "forestadmin:publish": "forest-cloud publish",
     "forestadmin:build:package:publish": "npm-run-all build forestadmin:package forestadmin:publish",
-    "forestadmin:help": "forest-cloud --help"
+    "forestadmin:help": "forest-cloud --help",
+    "forestadmin:version": "forest-cloud --version"
   },
   "devDependencies": {
-    "@forestadmin/cloud-toolkit": "^1.0.0-beta-cloud-toolkit.19",
+    "@forestadmin/forest-cloud": "latest",
     "@types/node": "^20.10.6",
     "dotenv": "^16.3.1",
     "esbuild": "^0.20.0",
