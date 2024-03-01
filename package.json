@@ -19,7 +19,8 @@
     "forestadmin:publish": "forest-cloud publish",
     "forestadmin:build:package:publish": "npm-run-all build forestadmin:package forestadmin:publish",
     "forestadmin:help": "forest-cloud --help",
-    "forestadmin:version": "forest-cloud --version"
+    "forestadmin:version": "forest-cloud --version",
+    "forestadmin:logs": "forest-cloud logs"
   },
   "devDependencies": {
     "@forestadmin/forest-cloud": "latest",
