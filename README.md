@@ -5,20 +5,35 @@ you can use this package to add code customizations to it.
 
 The workflow to add code customizations is the following:
 
-1. [Bootstrap](#bootstrap) the code customization template to be able to write your customizations.
-2. [Write your customizations](#write-your-customizations)
-3. [Publish your customizations](#publish-your-customizations) to your project
-4. [Update typings](#update-typings) to update typings in your IDE
+1. [Bootstrap](#bootstrap) the project (not needed if the project is already bootstrapped)
+2. [Setup](#setup) the project
+3. [Write your customizations](#write-your-customizations)
+4. [Publish your customizations](#publish-your-customizations) to your project
+5. [Update typings](#update-typings) to update typings in your IDE
+6. [Refresh authentication token](#refresh-authentication-token)
+7. [Display logs](#display-logs)
 
 # Bootstrap
 
-`npx @forestadmin/cloud-toolkit bootstrap`
+**Not needed if the project is already bootstrapped !**
+**Go to the next step if the project is already bootstrapped.**
 
-then go to the generated folder
+`npx @forestadmin/forest-cloud@latest bootstrap your-project-name --env-secret your-env-secret`
 
-`cd cloud-customizer`
+# Setup
 
-and install the dependencies
+**Not needed if the project has already a .env file !**
+
+If there is no `.env` file at the root of the project you need to create one with the following content:
+
+```
+FOREST_ENV_SECRET=your-env-secret
+```
+
+You can found the `FOREST_ENV_SECRET` in the forestadmin interface, in the `Project Settings` > `Environment` section
+or ask it to an administrator of the project.
+
+# Install dependencies and build
 
 `yarn install` or `npm install`
 
@@ -31,11 +46,13 @@ You can replace them with your own scripts, by using directly the `forest-cloud`
 
 # Write your customizations
 
+Open the `src` folder and start writing your customizations in the `index.ts` file.
+
 **[Read the developer guide](https://docs.forestadmin.com/developer-guide-agents-nodejs/agent-customization/agent-customization)** to learn how to write customizations.
 
 # Publish your customizations
 
-To publish your customizations, you need to build, package and publish your customizations.
+To publish your customizations, you need to `build`, `package` and `publish` your customizations.
 The build command will compile your customizations, the package command will create a package and the publish command will publish your package to your project.
 
 ```bash
@@ -77,3 +94,12 @@ Then add the following line in your `.env` file:
 ```
 FOREST_AUTH_TOKEN=your-token
 ```
+
+# Display logs
+
+`npx forest-cloud logs`
+
+You can also use `yarn` or `npm` and run `forestadmin:logs` script.
+
+This command will display the logs of your project. It's useful to debug your customizations.
+By default, it will display the last 30 logs of the current month.
