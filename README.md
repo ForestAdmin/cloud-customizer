@@ -5,20 +5,12 @@ you can use this package to add code customizations to it.
 
 The workflow to add code customizations is the following:
 
-1. [Bootstrap](#bootstrap) the project (not needed if the project is already bootstrapped)
-2. [Setup](#setup) the project
-3. [Write your customizations](#write-your-customizations)
-4. [Publish your customizations](#publish-your-customizations) to your project
-5. [Update typings](#update-typings) to update typings in your IDE
-6. [Refresh authentication token](#refresh-authentication-token)
-7. [Display logs](#display-logs)
-
-# Bootstrap
-
-**Not needed if the project is already bootstrapped !**
-**Go to the next step if the project is already bootstrapped.**
-
-`npx @forestadmin/forest-cloud@latest bootstrap your-project-name --env-secret your-env-secret`
+1. [Setup](#setup) the project
+2. [Write your customizations](#write-your-customizations)
+3. [Publish your customizations](#publish-your-customizations) to your project
+4. [Update typings](#update-typings) to update typings in your IDE
+5. [Refresh authentication token](#refresh-authentication-token)
+6. [Display logs](#display-logs)
 
 # Setup
 
@@ -52,16 +44,18 @@ Open the `src` folder and start writing your customizations in the `index.ts` fi
 
 # Publish your customizations
 
-To publish your customizations, you need to `build`, `package` and `publish` your customizations.
-The build command will compile your customizations, the package command will create a package and the publish command will publish your package to your project.
+You can use `yarn` or `npm` and run `forestadmin:build:package:publish` script.
+
+This command will build your customizations and publish them to your project.
+
+This shortcut will run the following commands:
+
+`yarn run build` or `npm run build`
 
 ```bash
-npx forest-cloud build
 npx forest-cloud package
 npx forest-cloud publish
 ```
-
-You can also use `yarn` or `npm` and run `forestadmin:build:package:publish` script.
 
 # Update typings
 
@@ -79,7 +73,7 @@ The typings are here to provide autocompletion in your IDE to help you write fas
 You should execute this command on a regular basis, to keep your IDE
 updated with your database structure and customizations.
 
-# Refresh authentication token
+# Login
 
 `npx forest-cloud login`
 
