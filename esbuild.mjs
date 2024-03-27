@@ -1,4 +1,8 @@
 import * as esbuild from 'esbuild'
+const define = {}
+for (const k in process.env) {
+    define[`process.env.${k}`] = JSON.stringify(process.env[k])
+}
 
 await esbuild.build({
     entryPoints: ['./src/index.ts'],
@@ -8,5 +12,6 @@ await esbuild.build({
     treeShaking: true,
     logLevel: 'debug',
     target: 'node18',
-    platform: 'node'
+    platform: 'node',
+    define,
 })
