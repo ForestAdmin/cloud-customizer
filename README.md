@@ -82,7 +82,7 @@ You can also use `yarn` or `npm` and run `forestadmin:login` script.
 This command triggers an authentication workflow and refresh the authentication token.
 
 An alternative, is to add the `FOREST_AUTH_TOKEN` token in your `.env` file.
-You can create one by [going to your account settings](https://app.development.forestadmin.com/user-settings/application-tokens/generate).
+You can create one by [going to your account settings](https://app.forestadmin.com/user-settings/application-tokens/generate).
 
 Then add the following line in your `.env` file:
 ```
