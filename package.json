@@ -20,7 +20,10 @@
     "forestadmin:build:package:publish": "npm-run-all build forestadmin:package forestadmin:publish",
     "forestadmin:help": "forest-cloud --help",
     "forestadmin:version": "forest-cloud --version",
-    "forestadmin:logs": "forest-cloud logs"
+    "forestadmin:logs": "forest-cloud logs",
+    "start": "yarn build:node && forest-cloud start",
+    "dev": "yarn build:node && forest-cloud start",
+    "dev:watch": "nodemon --watch src/* -e js,ts --exec 'yarn dev'"
   },
   "devDependencies": {
     "@forestadmin/forest-cloud": "latest",
